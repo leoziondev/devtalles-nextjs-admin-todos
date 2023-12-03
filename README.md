@@ -21,9 +21,16 @@ Basic RESTFul API Handlers in NextJS 14
 docker compose up -d
 ```
 
-2. Rename .env.example to .env
+2. Copy .env.example and rename to .env
 3. Replace environment variables
-4. Execute SEED to [create local data db](localhost:3000/api/seed)
+4. Execute command ``` npm install ```
+5. Execute command ``` npm run dev ```
+6. Execute this Prisma commands:
+```
+npx prisma migrate dev
+npx prisma generate
+```
+7. Execute SEED to [create local data db](localhost:3000/api/seed)
 
 
 ### Prisma commands
