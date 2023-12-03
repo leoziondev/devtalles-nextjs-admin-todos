@@ -1,4 +1,17 @@
-# NextJS 14 Admin Todos APP
+# NextJS 14 Admin Todos APP - Next API Routes
+Basic RESTFul API Handlers in NextJS 14
+
+## Topics study in this project
+* NextJS 14
+* Prisma
+* PostgreSQL
+* Yup Validator
+* Docker
+* SEED
+* READ
+* POST
+* UPDATE
+* Simple Paginate
 
 ## How to run this project
 
@@ -19,8 +32,4 @@ npx prisma init
 npx prisma migrate dev
 npx prisma generate
 ```
-
-### Production
-
-### Stage
 
