@@ -2,6 +2,9 @@ import prisma from "@/lib/prisma";
 import { NewTodo } from "@/todos";
 import TodosGrid from "@/todos/components/TodosGrid";
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata = {
  title: 'Todos List',
  description: 'SEO Title',
