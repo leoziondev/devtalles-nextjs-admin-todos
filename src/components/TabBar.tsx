@@ -1,5 +1,6 @@
 'use client'
 
+import { setCookie } from "cookies-next"
 import { useState } from "react"
 
 interface Props {
@@ -12,6 +13,7 @@ export const TabBar = ({tabOptions = [1,2,3,4], currentTab = 1}: Props) => {
 
     const onTabSelected = ( tab: number ) => {
         setSelected(tab)
+        setCookie('selectedTab', tab.toString())
     }
 
     return (
@@ -27,7 +29,7 @@ export const TabBar = ({tabOptions = [1,2,3,4], currentTab = 1}: Props) => {
                     onChange={() => {}}
                 />
                 <label
-                    onClick={() => setSelected(tab)}
+                    onClick={() => onTabSelected(tab)}
                     className="transition-all block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white hover:bg-slate-100">
                     {tab}
                 </label>
