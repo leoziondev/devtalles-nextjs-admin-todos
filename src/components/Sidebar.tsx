@@ -19,7 +19,12 @@ const menuItems = [
         icon: <IoListOutline size={30} />,
         title: 'Server Actions',
         path: '/dashboard/server-todos'
-    }
+    },
+    {
+        icon: <IoListOutline size={30} />,
+        title: 'Cookies',
+        path: '/dashboard/cookies'
+    },
 ]
 
 export const Sidebar = () => {

@@ -8,6 +8,7 @@ Basic RESTFul API Handlers in NextJS 14
   - Client and Server Rendering
   - Server Actions
   - useOptimistc
+  - Cookies Client and Server Side
 - Prisma
 - PostgreSQL
 - Yup Validator
