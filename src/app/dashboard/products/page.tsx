@@ -1,5 +1,6 @@
-import { ProductCard } from "@/products";
 import { products } from "@/products/data/products";
+
+import ProductCard from "@/products/components/ProductCard";
 
 export default function ProductsPage() {
   return (
